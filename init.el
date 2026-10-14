@@ -60,6 +60,7 @@
 (rc/require 'magit)
 (rc/require 'dart-mode)
 (rc/require '2048-game)
+(rc/require 'markdown-mode)
 ; ido
 
 (rc/require 'smex 'ido-completing-read+)
