@@ -4,3 +4,5 @@ tramp
 ido.*
 smex-items
 url
+transient
+server
