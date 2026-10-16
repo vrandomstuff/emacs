@@ -6,3 +6,5 @@ smex-items
 url
 transient
 server
+.cache
+.lsp-session-v1
