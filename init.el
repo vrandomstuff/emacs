@@ -51,6 +51,7 @@
 (rc/require 'zig-mode)
 (rc/require 'lsp-mode)
 (rc/require 'lsp-ui)
+(rc/require 'just-mode)
 ;ido
 
 (rc/require 'smex 'ido-completing-read+)
@@ -69,7 +70,10 @@
                   (interactive)
                   (beginning-of-line)
                   (kill-line 1)))
-; change directory
+(global-set-key (kbd "<down>") 'next-logical-line)
+(global-set-key (kbd "<up>")   'previous-logical-line)
+
+;change directory
 (setq default-directory
       (file-name-as-directory
        (if (eq system-type 'windows-nt)
@@ -88,7 +92,7 @@
 	 default))
  '(package-selected-packages
    '(dart-mode dash-functional gruber-darker-theme ido-completing-read+
-			   magit smex zig-mode))
+			   just-mode magit smex zig-mode))
  '(tab-width 4))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
